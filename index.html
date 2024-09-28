@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky">
+        <a href="#" class="logo">My Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navmenu" id="navmenu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    
+
+    <section class="home" id="home">
+        <img class="profile-picture" src="./retouch_2022111300060762.jpg" alt="1x1-profile-picture">
+        <div class="textbox">
+            <h2>
+                Hi, I'm
+                <br>
+                <span>Kyle Efondo</span> 
+            </h2>
+            <h3>BSIT Student</h3>
+            <a href="https://kyledefondo.github.io/Capstone-1-Resume-/" class="cv">MORE ON CV</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About me</h2>
+        </div>
+        <div class="content">
+            <div class="content-box-one">
+                <h3>Hey there! I'm Kyle, 2nd BSIT student</h3>
+                <p>
+                    I am a Information Technology who fell in love with software I like discovering 
+                    new technologies and building project from scratch. When it's my free time, I code, when it's not, I still code.
+                    <br><br>
+                    Apart from coding, I play volleyball during breaktimes
+                </p>
+                <br>
+                <h3>My skills:</h3>
+                <div class="skills">
+                    <img src="./html-5.png" alt="html">
+                    <img src="./css-3.png" alt="css">
+                    <img src="./bootstrap.png" alt="bootstrap">
+                    <img src="./c.png" alt="c">
+                    <img src="./python.png" alt="python">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="heading white">
+            <h2>Projects</h2>
+            <p>List of Projects, I have proudly created</p>
+        </div>
+        <div class="project-content">
+            <a href="https://kyledefondo.github.io/TinDogProject/" target="_blank">
+                <div class="projectsBx">
+                    <img src="./tindog.jpg">
+                    <h2>TinDog</h2>
+                    <br>
+                    <p>This is a Website for dog's tinder</p>
+                    <br><br><br>
+                </div>
+            </a>
+            <a href="https://kyledefondo.github.io/MondrianProject/" target="_blank">
+                <div class="projectsBx">
+                    <img src="./mondrian.jpg">
+                    <h2>Mondrian</h2>
+                    <br>
+                    <p>This is a abstract digital painting made from squares and rectangles</p>
+                    <br><br>
+                </div>
+            </a>
+            <a href="https://kyledefondo.github.io/BootstrapComponents/" target="_blank">
+                <div class="projectsBx">
+                    <img src="./moveit.jpg">
+                    <h2>Move With Joy</h2>
+                    <p>This is a Website made with Bootstrap Components</p>
+                    <br><br><br>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact me</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="./location_w1.png" alt="location">
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Pamayanang Diego Silang</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <img src="./phone_w1.png" alt="location">
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+639564480251</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <img src="./mail_w1.png" alt="location">
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>aefondo124@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action="send_email.php" method="POST">
+                    <h3>Message me</h3>
+                    <input type="text" name="visitor_name" placeholder="Full Name" required>
+                    <input type="email" name="visitor_email" placeholder="Email" required>
+                    <textarea placeholder="Your Message" name="visitor_msg"></textarea>
+                    <input type="submit" name="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright © 2022 | KYLE</p>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById("navmenu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
